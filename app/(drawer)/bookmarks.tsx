@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text} from "react-native";
 
-const Index = () => {
+const Bookmarks = () => {
     return (
         <View >
-            <Text >Index</Text >
+            <Text >BookMarks</Text >
         </View >
     );
 };
 
-export default Index;
+export default Bookmarks;
