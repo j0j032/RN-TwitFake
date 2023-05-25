@@ -1,5 +1,4 @@
 import {TweetType} from "../../types";
-import {ImageSourcePropType} from "react-native";
 
 const tweets: TweetType[] = [
     {
@@ -9,12 +8,12 @@ const tweets: TweetType[] = [
             username: 'VadimNotJustDev',
             name: 'Vadim',
             image:
-                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png' as ImageSourcePropType,
+                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png',
         },
         createdAt: '2020-08-27T12:00:00.000Z',
         content: 'Can you please check if the Subscribe button on Youtube works?',
         image:
-            'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/thumbnail.png' as ImageSourcePropType,
+            'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/thumbnail.png',
         numberOfComments: 123,
         numberOfRetweets: 11,
         numberOfLikes: 10,
@@ -27,7 +26,7 @@ const tweets: TweetType[] = [
             name: 'Jeff B',
             username: 'bezos',
             image:
-                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg' as ImageSourcePropType,
+                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg',
         },
         content:
             'Just had a great workout at the gym! 💪 #fitness #healthylifestyle',
@@ -44,10 +43,10 @@ const tweets: TweetType[] = [
             name: 'Zuck',
             username: 'zuck',
             image:
-                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg' as ImageSourcePropType,
+                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/zuck.jpeg',
         },
         content: 'Had an amazing surf session this morning',
-        image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/8.jpg' as ImageSourcePropType,
+        image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/8.jpg',
         numberOfComments: 10,
         numberOfRetweets: 20,
         numberOfLikes: 100,
@@ -61,7 +60,7 @@ const tweets: TweetType[] = [
             name: 'Jane Smith',
             username: 'janesmith',
             image:
-                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/6.png' as ImageSourcePropType,
+                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/6.png',
         },
         content:
             'Excited to announce that I will be speaking at the upcoming tech conference in San Francisco! 🎉 #womenintech',
@@ -77,13 +76,13 @@ const tweets: TweetType[] = [
             username: 'VadimNotJustDev',
             name: 'Vadim',
             image:
-                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png' as ImageSourcePropType,
+                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png',
         },
         createdAt: '2020-08-27T12:00:00.000Z',
         content:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         image:
-            'https://i.insider.com/5d03aa8e6fc9201bc7002b43?width=1136&format=jpeg' as ImageSourcePropType,
+            'https://i.insider.com/5d03aa8e6fc9201bc7002b43?width=1136&format=jpeg',
         numberOfComments: 123,
         numberOfRetweets: 11,
         numberOfLikes: 10,
@@ -95,7 +94,7 @@ const tweets: TweetType[] = [
             username: 'VadimNotJustDev',
             name: 'Vadim',
             image:
-                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png' as ImageSourcePropType,
+                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png',
         },
         createdAt: '2020-08-27T12:00:00.000Z',
         content:
@@ -111,7 +110,7 @@ const tweets: TweetType[] = [
             username: 'VadimNotJustDev',
             name: 'Vadim',
             image:
-                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png' as ImageSourcePropType,
+                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png',
         },
         createdAt: '2020-08-27T12:00:00.000Z',
         content: 'Hello World',
@@ -126,7 +125,7 @@ const tweets: TweetType[] = [
             username: 'VadimNotJustDev',
             name: 'Vadim',
             image:
-                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png' as ImageSourcePropType,
+                'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.png',
         },
         createdAt: '2020-08-27T12:00:00.000Z',
         content:

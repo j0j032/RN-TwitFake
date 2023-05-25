@@ -1,10 +1,8 @@
-import {ImageSourcePropType} from "react-native";
-
 export type UserType = {
     id: string;
     name: string;
     username: string;
-    image: ImageSourcePropType;
+    image: string;
 
 }
 
@@ -13,7 +11,7 @@ export type TweetType = {
     user: UserType;
     createdAt: string;
     content: string;
-    image?: ImageSourcePropType;
+    image?: string;
     numberOfComments?: number;
     numberOfRetweets?: number;
     numberOfLikes?: number;
