@@ -1,20 +1,33 @@
-import { View, Text, TextInput, Pressable, StyleSheet } from "react-native";
+import { View, Text, TextInput, Pressable, StyleSheet, Alert } from "react-native";
 import React from "react";
-import { useSearchParams } from "expo-router";
+import { useRouter, useSearchParams } from "expo-router";
+import { authenticate } from "../../lib/api/auth";
+import { useMutation } from "@tanstack/react-query";
 
 const Authenticate = () => {
-  const [code, setCode] = React.useState("");
+  const [emailToken, setemailToken] = React.useState("");
   const { email } = useSearchParams();
+  const router = useRouter();
 
-  const onConfirm = () => {
-    console.warn("Authenticate", { email, code });
+  const { mutateAsync } = useMutation({
+    mutationFn: authenticate,
+    onSuccess: () => router.push({ pathname: "/" }),
+  });
+
+  const onConfirm = async () => {
+    if (typeof email !== "string") throw new Error("Email is not a string");
+    try {
+      await mutateAsync({ email, emailToken });
+    } catch (error: any) {
+      Alert.alert("Error", error.message);
+    }
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.label}>Enter Email password</Text>
 
-      <TextInput placeholder="EmailCode" value={code} onChangeText={setCode} style={styles.input} />
+      <TextInput placeholder="EmailemailToken" value={emailToken} onChangeText={setemailToken} style={styles.input} />
 
       <Pressable style={styles.button} onPress={onConfirm}>
         <Text style={styles.buttonText}>Send Password</Text>
