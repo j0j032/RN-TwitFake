@@ -1,14 +1,24 @@
-import { View, Text, TextInput, Pressable, StyleSheet } from "react-native";
+import { View, Text, TextInput, Pressable, StyleSheet, Alert } from "react-native";
 import React from "react";
 import { useRouter } from "expo-router";
+import { login } from "../../lib/api/auth";
+import { useMutation } from "@tanstack/react-query";
 
 const Login = () => {
   const [email, setEmail] = React.useState("");
   const router = useRouter();
 
-  const onSignIn = () => {
-    console.warn("TODO: Sign in", { email });
-    router.push({ pathname: "/authenticate", params: { email } });
+  const { mutateAsync } = useMutation({
+    mutationFn: login,
+    onSuccess: () => router.push({ pathname: "/authenticate", params: { email } }),
+  });
+
+  const onSignIn = async () => {
+    try {
+      await mutateAsync({ email });
+    } catch (error: any) {
+      Alert.alert("Error", error.message);
+    }
   };
 
   return (
